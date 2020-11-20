@@ -1,0 +1,13 @@
+@import "stylesheets/utilities/colours.scss";
+
+.Header {
+  margin: 30px 0;
+  border-top: 2px solid #bbb;
+
+  & > h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 10px 0;
+    text-align: left;
+  }
+}
