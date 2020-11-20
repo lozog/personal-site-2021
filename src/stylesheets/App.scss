@@ -18,3 +18,23 @@
 .App-link {
   color: #61dafb;
 }
+
+.nav-sidebar {
+  float: left;
+  width: 200px;
+  text-align: left;
+
+  a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #1982d1;
+  }
+
+  a:focus, a:active, a:hover {
+    text-decoration: underline;
+  }
+}
+
+.page-content {
+  float: left;
+}
