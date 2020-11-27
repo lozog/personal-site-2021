@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
+import Footer from "components/Footer";
 import Header from "components/Header";
 import Home from "components/pages/Home";
 import Music from "components/pages/Music";
@@ -27,6 +28,7 @@ function App() {
           </div>
         </div>
       </Router>
+      <Footer />
     </div>
   );
 }
