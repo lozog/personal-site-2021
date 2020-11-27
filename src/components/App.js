@@ -17,7 +17,7 @@ function App() {
           </nav>
           <div className="page-content">
             <Switch>
-              <Route path="/" exact="true">
+              <Route path="/" exact={true}>
                 <Home />
               </Route>
               <Route path="/music">

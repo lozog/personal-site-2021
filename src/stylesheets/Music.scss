@@ -1,0 +1,34 @@
+$release-width: 350px;
+
+.Music {
+  width: 100%;
+  display: block;
+
+  h1 {
+    margin: 0px;
+    margin-bottom: 40px;
+  }
+
+  &__releases-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, $release-width);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
+
+  &__release-container {
+    width: $release-width;
+    display: inline-block;
+    text-align: center;
+
+    a {
+      display: block;
+      font-weight: 700;
+    }
+  }
+
+  &__cover-art {
+    width: 100%;
+  }
+}

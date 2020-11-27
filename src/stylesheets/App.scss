@@ -1,8 +1,7 @@
 @import "stylesheets/utilities/colours.scss";
 
-.App {
-  text-align: center;
-}
+$sidebar-width: 200px;
+$sidebar-right-margin: 20px;
 
 .App-header {
   background-color: $color-white;
@@ -19,9 +18,14 @@
   color: #61dafb;
 }
 
+.page-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .nav-sidebar {
-  float: left;
-  width: 200px;
+  flex-grow: 1;
+  flex-basis: 200px;
   text-align: left;
 
   a {
@@ -31,5 +35,7 @@
 }
 
 .page-content {
-  float: left;
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: 50%;
 }
