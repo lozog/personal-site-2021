@@ -6,3 +6,9 @@ This is the source code for Liam Ozog's personal site.
 ```
 yarn && yarn start
 ```
+
+## Build & Deploy
+```
+yarn build
+netlify deploy --prod
+```
