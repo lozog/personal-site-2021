@@ -1,4 +1,7 @@
+@import "stylesheets/utilities/variables.scss";
+
 $release-width: 350px;
+$release-width-small: 200px;
 
 .Music {
   width: 100%;
@@ -15,10 +18,13 @@ $release-width: 350px;
     grid-template-columns: repeat(auto-fill, $release-width);
     grid-column-gap: 40px;
     grid-row-gap: 40px;
+
+    @media (max-width: $small-screen-breakpoint) {
+      grid-template-columns: repeat(auto-fill, $release-width-small);
+    }
   }
 
   &__release-container {
-    max-width: $release-width;
     display: inline-block;
     text-align: center;
 

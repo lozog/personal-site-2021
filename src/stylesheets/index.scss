@@ -1,3 +1,6 @@
+@import "stylesheets/utilities/colours.scss";
+@import "stylesheets/utilities/variables.scss";
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial",
@@ -5,7 +8,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  padding: 0 5%;
+  padding: 0 2em;
+
+  @media (max-width: $small-screen-breakpoint) {
+   padding: 0 10px;
+  }
 }
 
 code {
@@ -15,9 +22,10 @@ code {
 
 a {
   text-decoration: none;
-  color: #1982d1;
+  color: $color-link;
 }
 
 a:focus, a:active, a:hover {
   text-decoration: underline;
+  color: $color-link-hover;
 }

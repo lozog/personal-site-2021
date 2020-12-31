@@ -1,4 +1,5 @@
 @import "stylesheets/utilities/colours.scss";
+@import "stylesheets/utilities/variables.scss";
 
 $sidebar-width: 200px;
 $sidebar-right-margin: 20px;
@@ -27,6 +28,11 @@ $sidebar-right-margin: 20px;
   flex-grow: 1;
   flex-basis: 200px;
   text-align: left;
+
+  @media (max-width: $small-screen-breakpoint) {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
 
   a {
     font-weight: 700;
