@@ -18,7 +18,7 @@ $release-width: 350px;
   }
 
   &__release-container {
-    width: $release-width;
+    max-width: $release-width;
     display: inline-block;
     text-align: center;
 
