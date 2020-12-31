@@ -22,6 +22,10 @@ $release-width-small: 200px;
     @media (max-width: $small-screen-breakpoint) {
       grid-template-columns: repeat(auto-fill, $release-width-small);
     }
+
+    @media (max-width: $xsmall-screen-breakpoint) {
+      grid-template-columns: auto;
+    }
   }
 
   &__release-container {
