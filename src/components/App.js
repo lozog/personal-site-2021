@@ -6,13 +6,18 @@ import Home from "components/pages/Home";
 import Music from "components/pages/Music";
 import "stylesheets/App.scss";
 
+/**
+ * TODO:
+ * Have links highlight when on their page
+ */
+
 function App() {
   return (
     <div className="App">
       <Header />
       <Router>
         <div className="page-wrapper">
-          <nav className="nav-sidebar">
+          <nav className="App__sidebar">
             <Link to="/">Home</Link>
             <Link to="/music">Music</Link>
           </nav>
