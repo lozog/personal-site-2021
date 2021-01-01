@@ -1,0 +1,29 @@
+@import "stylesheets/utilities/variables.scss";
+
+$gallery-width: 350px;
+
+.Photography {
+  width: 100%;
+  display: block;
+
+  h1 {
+    margin: 0px;
+    margin-bottom: 40px;
+  }
+
+  &__galleries-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($gallery-width, 1fr));
+    grid-gap: .5rem;
+    align-items: flex-start;
+  }
+
+  &__gallery-container {
+    display: inline-block;
+  }
+
+  &__gallery-cover {
+    width: 100%;
+  }
+}

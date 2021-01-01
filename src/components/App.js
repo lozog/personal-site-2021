@@ -4,6 +4,7 @@ import Footer from "components/Footer";
 import Header from "components/Header";
 import Home from "components/pages/Home";
 import Music from "components/pages/Music";
+import Photography from "components/pages/Photography";
 import "stylesheets/App.scss";
 
 /**
@@ -20,6 +21,7 @@ function App() {
           <nav className="App__sidebar">
             <Link to="/">Home</Link>
             <Link to="/music">Music</Link>
+            <Link to="/photography">Photography</Link>
           </nav>
           <div className="page-content">
             <Switch>
@@ -28,6 +30,9 @@ function App() {
               </Route>
               <Route path="/music">
                 <Music />
+              </Route>
+              <Route path="/photography">
+                <Photography />
               </Route>
             </Switch>
           </div>
