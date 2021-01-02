@@ -1,4 +1,8 @@
 import sys, getopt, os, json
+from subprocess import call
+
+# Given a directory, mogrify all jpgs into thumbnail gifs in /thumbs
+# then print out a json array for use in galleries.js
 
 # usage: python gallery_helper.py <directory>
 
@@ -7,6 +11,8 @@ def main(argv):
     print(args)
     directory = args[0]
     images_list = []
+    call(["mkdir", f"{directory}/thumbs"])
+    call(["mogrify", "-format", "gif", "-path", f"{directory}/thumbs", "-thumbnail", "700x700", f"{directory}/*.jpg"])
 
     for filename in os.listdir(directory):
         if filename.endswith(".jpg"): 
