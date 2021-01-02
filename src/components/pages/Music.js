@@ -56,10 +56,14 @@ function Music() {
       <div className="Music__releases-grid">
         {
           RELEASES.map((releaseInfo) => (
-            <div className="Music__release-container" key={releaseInfo.title}>
-              <img src={releaseInfo.coverUrl} alt={releaseInfo.title} className="Music__cover-art" />
-              <a href={releaseInfo.url}>{releaseInfo.title}</a>
-            </div>
+            <a href={releaseInfo.url} key={releaseInfo.title}>
+              <div className="Music__release-container">
+                <img src={releaseInfo.coverUrl} alt={releaseInfo.title} className="Music__cover-art" />
+                <div className="Music__release-container-overlay">
+                </div>
+              </div>
+              <div className="Music__release-container-title">{releaseInfo.title}</div>
+            </a>
           ))
         }
       </div>

@@ -1,3 +1,4 @@
+@import "stylesheets/utilities/colours.scss";
 @import "stylesheets/utilities/variables.scss";
 
 $release-width: 350px;
@@ -30,12 +31,28 @@ $release-width-small: 200px;
 
   &__release-container {
     display: inline-block;
+    position: relative;
     text-align: center;
+  }
 
-    a {
-      display: block;
-      font-weight: 700;
+  &__release-container-overlay {
+    position: absolute;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: .3s ease;
+
+    &:hover {
+      opacity: 1;
     }
+  }
+
+  &__release-container-title {
+    font-weight: 700;
+    text-align: center;
   }
 
   &__cover-art {
