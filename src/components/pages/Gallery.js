@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Lightbox from 'react-image-lightbox';
 
 import { GALLERIES } from "data/galleries";
@@ -23,7 +23,7 @@ function Gallery() {
     <div className="Gallery">
       <div className="Gallery__header">
         <h1>{gallery.title}</h1>
-        <a href="/photography">&lt; Back</a>
+        <Link to="/photography">&lt; Back</Link>
       </div>
       <div className="Gallery__galleries-grid">
         {
