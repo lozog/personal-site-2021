@@ -6,6 +6,10 @@ from subprocess import call
 
 # usage: python gallery_helper.py <directory>
 
+# TODO: use 80% quality 1500x1500 jpgs for full-size
+# TODO: use 50% quality 700x700 gifs for thumbnails
+# TODO: you might not even need thumbnails tbh, we're already at ~400-500kb per full size
+
 def main(argv):
     opts, args = getopt.getopt(argv, "")
     print(args)
