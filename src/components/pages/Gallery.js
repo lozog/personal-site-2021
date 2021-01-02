@@ -10,6 +10,11 @@ function Gallery() {
   const [imageIndex, setImageIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const gallery = GALLERIES[galleryId];
+
+  if (!gallery) {
+    return <div>Gallery not found</div>
+  }
+
   const images = gallery.images.map(image => (
     image.filename
   ))

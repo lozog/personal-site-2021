@@ -13,6 +13,10 @@ import "stylesheets/App.scss";
  * TODO: refactor using StyledComponents
  */
 
+ function NotFound() {
+   return <div>Page not found</div>
+ }
+
 function App() {
   return (
     <div className="App">
@@ -38,6 +42,7 @@ function App() {
               <Route path="/photography/:galleryId">
                 <Gallery />
               </Route>
+              <Route component={NotFound} />
             </Switch>
           </div>
         </div>
