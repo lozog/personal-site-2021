@@ -2,7 +2,6 @@ import "stylesheets/Music.scss";
 
 /**
  * TODO:
- * add hover state and hyperlinked images to release items
  * add links to spotify, etc
  */
 

@@ -4,8 +4,7 @@ import { GALLERIES } from "data/galleries";
 import "stylesheets/Photography.scss";
 
 /**
- * TODO:
- * add link to my Instagram
+ * TODO: add link to my Instagram
  */
 
 function Photography() {

@@ -17,8 +17,8 @@ $release-width-small: 200px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, $release-width);
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 
     @media (max-width: $small-screen-breakpoint) {
       grid-template-columns: repeat(auto-fill, $release-width-small);
