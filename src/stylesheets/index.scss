@@ -13,6 +13,11 @@ body {
   @media (max-width: $small-screen-breakpoint) {
    padding: 0 10px;
   }
+
+  // TODO: make switching to dark mode easier
+  // uncomment for dark mode
+  background-color: #3d3f3f;
+  color: $color-white;
 }
 
 code {
