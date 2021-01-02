@@ -14,14 +14,13 @@ $gallery-width: 350px;
 
   &__galleries-grid {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax($gallery-width, 1fr));
-    grid-gap: .5rem;
-    align-items: flex-start;
+    columns: 4 $gallery-width;
+    column-gap: 1rem;
   }
 
   &__gallery-container {
     display: inline-block;
+    margin-bottom: 1rem;
     cursor: pointer;
   }
 
