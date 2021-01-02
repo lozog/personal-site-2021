@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Footer from "components/Footer";
 import Header from "components/Header";
+import Gallery from "components/pages/Gallery";
 import Home from "components/pages/Home";
 import Music from "components/pages/Music";
 import Photography from "components/pages/Photography";
@@ -31,8 +32,11 @@ function App() {
               <Route path="/music">
                 <Music />
               </Route>
-              <Route path="/photography">
+              <Route path="/photography" exact={true}>
                 <Photography />
+              </Route>
+              <Route path="/photography/:galleryId">
+                <Gallery />
               </Route>
             </Switch>
           </div>

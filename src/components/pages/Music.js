@@ -1,5 +1,10 @@
 import "stylesheets/Music.scss";
 
+/**
+ * TODO:
+ * add hover state and hyperlinked images to release items
+ */
+
 const LIFESAVER = {
   title: "Lifesaver",
   releaseDate: "2019-06-01",

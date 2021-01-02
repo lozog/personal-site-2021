@@ -1,8 +1,6 @@
-$image-width: 350px;
+$gallery-width: 350px;
 
-// TODO: consolidate all these repeated gallery styles
-
-.Photography {
+.Gallery {
   width: 100%;
   display: block;
 
@@ -14,7 +12,7 @@ $image-width: 350px;
   &__galleries-grid {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax($image-width, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax($gallery-width, 1fr));
     grid-gap: .5rem;
     align-items: flex-start;
   }
