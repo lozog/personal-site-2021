@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import 'react-image-lightbox/style.css';
 
 import Footer from "components/Footer";
 import Header from "components/Header";

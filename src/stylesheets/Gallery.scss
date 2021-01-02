@@ -4,7 +4,10 @@ $gallery-width: 350px;
   width: 100%;
   display: block;
 
-  h1 {
+  &__header {
+    h1 {
+      margin: 0;
+    }
     margin: 0px;
     margin-bottom: 40px;
   }
@@ -19,6 +22,7 @@ $gallery-width: 350px;
 
   &__gallery-container {
     display: inline-block;
+    cursor: pointer;
   }
 
   &__gallery-cover {
