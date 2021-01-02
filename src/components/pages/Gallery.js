@@ -31,16 +31,16 @@ function Gallery() {
                 setIsOpen(true)
               }}
             >
-              <img src={`/img/thumbs/${image.thumbnail}`} alt={image.filename} className="Gallery__gallery-cover" />
+              <img src={`/img/${galleryId}/thumbs/${image.thumbnail}`} alt={image.filename} className="Gallery__gallery-cover" />
             </div>
           ))
         }
       </div>
       {isOpen && (
         <Lightbox
-          mainSrc={`/img/${images[imageIndex]}`}
-          nextSrc={`/img/${images[(imageIndex + 1) % images.length]}`}
-          prevSrc={`/img/${images[(imageIndex + images.length - 1) % images.length]}`}
+          mainSrc={`/img/galleryId/${images[imageIndex]}`}
+          nextSrc={`/img/galleryId/${images[(imageIndex + 1) % images.length]}`}
+          prevSrc={`/img/galleryId/${images[(imageIndex + images.length - 1) % images.length]}`}
           onCloseRequest={() => setIsOpen(false)}
           onMovePrevRequest={() =>
             setImageIndex((imageIndex + images.length - 1) % images.length)

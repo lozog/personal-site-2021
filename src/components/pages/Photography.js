@@ -5,6 +5,7 @@ import "stylesheets/Photography.scss";
  * TODO:
  * add hover state to gallery containers
  * add lightbox for each image
+ * add link to my Instagram
  */
 
 function Photography() {
@@ -16,7 +17,7 @@ function Photography() {
           Object.entries(GALLERIES).map(([key, galleryInfo], i) => (
             <div className="Photography__gallery-container" key={galleryInfo.title}>
               <a href={`/photography/${key}`}>
-                <img src={`/img/thumbs/${galleryInfo.coverFilename}`} alt={galleryInfo.title} className="Photography__gallery-cover" />
+                <img src={`/img/${key}/thumbs/${galleryInfo.coverFilename}`} alt={galleryInfo.title} className="Photography__gallery-cover" />
               </a>
             </div>
           ))
