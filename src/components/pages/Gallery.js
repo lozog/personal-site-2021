@@ -12,9 +12,9 @@ function Gallery() {
       <a href="/photography">&lt; Back</a>
       <div className="Gallery__galleries-grid">
         {
-          gallery.images.map((imageFilename) => (
-            <div className="Gallery__gallery-container" key={imageFilename}>
-              <img src={`/img/${imageFilename}`} alt={gallery.title} className="Gallery__gallery-cover" />
+          gallery.images.map((image) => (
+            <div className="Gallery__gallery-container" key={image.filename}>
+              <img src={`/img/thumbs/${image.thumbnail}`} alt={image.filename} className="Gallery__gallery-cover" />
             </div>
           ))
         }
