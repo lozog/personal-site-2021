@@ -38,9 +38,9 @@ function Gallery() {
       </div>
       {isOpen && (
         <Lightbox
-          mainSrc={`/img/galleryId/${images[imageIndex]}`}
-          nextSrc={`/img/galleryId/${images[(imageIndex + 1) % images.length]}`}
-          prevSrc={`/img/galleryId/${images[(imageIndex + images.length - 1) % images.length]}`}
+          mainSrc={`/img/${galleryId}/${images[imageIndex]}`}
+          nextSrc={`/img/${galleryId}/${images[(imageIndex + 1) % images.length]}`}
+          prevSrc={`/img/${galleryId}/${images[(imageIndex + images.length - 1) % images.length]}`}
           onCloseRequest={() => setIsOpen(false)}
           onMovePrevRequest={() =>
             setImageIndex((imageIndex + images.length - 1) % images.length)
