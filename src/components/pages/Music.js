@@ -56,7 +56,7 @@ function Music() {
       <div className="Music__releases-grid">
         {
           RELEASES.map((releaseInfo) => (
-            <a href={releaseInfo.url} rel="noopener noreferrer" key={releaseInfo.title}>
+            <a href={releaseInfo.url} target="_blank" rel="noopener noreferrer" key={releaseInfo.title}>
               <div className="Music__release-container">
                 <img src={releaseInfo.coverUrl} alt={releaseInfo.title} className="Music__cover-art" />
                 <div className="Music__release-container-overlay">
