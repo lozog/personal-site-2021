@@ -36,7 +36,7 @@ function Gallery() {
                 setIsOpen(true)
               }}
             >
-              <img src={`/img/${galleryId}/thumbs/${image.thumbnail}`} alt={image.filename} className="Gallery__gallery-cover" />
+              <img src={`/img/${galleryId}/${image.filename}`} alt={image.filename} className="Gallery__gallery-cover" />
               <div className="Gallery__gallery-container-overlay" />
             </div>
           ))

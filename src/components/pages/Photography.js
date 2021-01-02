@@ -17,7 +17,7 @@ function Photography() {
           Object.entries(GALLERIES).map(([key, galleryInfo], i) => (
             <Link to={`/photography/${key}`}>
               <div className="Photography__gallery-container" key={galleryInfo.title}>
-                <img src={`/img/${key}/thumbs/${galleryInfo.coverFilename}`} alt={galleryInfo.title} className="Photography__gallery-cover" />
+                <img src={`/img/${key}/${galleryInfo.coverFilename}`} alt={galleryInfo.title} className="Photography__gallery-cover" />
                 <div className="Photography__gallery-container-overlay">
                   <div className="Photography__gallery-container-overlay-contents">{galleryInfo.title}</div>
                 </div>
