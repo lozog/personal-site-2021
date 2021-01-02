@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
 import 'react-image-lightbox/style.css';
 
 import Footer from "components/Footer";
@@ -10,8 +10,7 @@ import Photography from "components/pages/Photography";
 import "stylesheets/App.scss";
 
 /**
- * TODO:
- * Have links highlight when on their page
+ * TODO: refactor using StyledComponents
  */
 
 function App() {
@@ -21,9 +20,9 @@ function App() {
       <Router>
         <div className="page-wrapper">
           <nav className="App__sidebar">
-            <Link to="/">Home</Link>
-            <Link to="/music">Music</Link>
-            <Link to="/photography">Photography</Link>
+            <NavLink to="/" exact={true} activeClassName="sidebar-active_link">Home</NavLink>
+            <NavLink to="/music" activeClassName="sidebar-active_link">Music</NavLink>
+            <NavLink to="/photography" activeClassName="sidebar-active_link">Photography</NavLink>
           </nav>
           <div className="page-content">
             <Switch>

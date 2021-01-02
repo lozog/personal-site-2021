@@ -5,8 +5,6 @@ import "stylesheets/Photography.scss";
 
 /**
  * TODO:
- * add hover state to gallery containers
- * add lightbox for each image
  * add link to my Instagram
  */
 
