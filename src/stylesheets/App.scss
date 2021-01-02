@@ -24,6 +24,20 @@ $sidebar-right-margin: 20px;
       display: block;
     }
   }
+
+  &__sidebar-icon-container {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  &__sidebar-icon {
+    margin-right: 10px;
+    color: $color-white;
+
+    &:hover {
+      color: $color-link-hover;
+    }
+  }
 }
 
 .App-header {
