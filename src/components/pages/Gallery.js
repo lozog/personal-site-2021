@@ -32,6 +32,7 @@ function Gallery() {
               }}
             >
               <img src={`/img/${galleryId}/thumbs/${image.thumbnail}`} alt={image.filename} className="Gallery__gallery-cover" />
+              <div className="Gallery__gallery-container-overlay" />
             </div>
           ))
         }
