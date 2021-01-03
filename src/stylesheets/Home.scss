@@ -1,3 +1,59 @@
-.Home {
+@import "stylesheets/utilities/colours.scss";
 
+.Home {
+  &__contact {
+    margin-top: 40px;
+    width: 400px;
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  &__contact-input {
+      margin-top: 10px;
+
+    & input, & textarea {
+      background-color: rgba(0, 0, 0, 0);
+      width: 100%;
+      height: 32px;
+      border: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      font-size: 16px;
+      color: $color-white;
+    }
+
+    & textarea {
+      min-height: 100px;
+      margin-top: 5px;
+    }
+
+    & textarea:focus, & input:focus {
+      outline: none;
+      border-color: $color-white;
+    }
+
+    & textarea:hover, & input:hover {
+      border-color: $color-white;
+    }
+  }
+
+  &__contact-button {
+    color: $color-white;
+    width: 100px;
+    height: 32px;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+
+    &:hover {
+      border-color: $color-white;
+    }
+  }
+
+  &__contact-error {
+    margin-top: 10px;
+    color: red;
+  }
 }

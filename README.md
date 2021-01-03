@@ -6,6 +6,10 @@ This is the source code for Liam Ozog's personal site. Built using React, hosted
 ```
 yarn && yarn start
 ```
+or
+```
+yarn && netlify dev
+```
 
 ## Build & Deploy
 ```
