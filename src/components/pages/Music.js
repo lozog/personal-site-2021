@@ -1,8 +1,7 @@
 import "stylesheets/Music.scss";
 
 /**
- * TODO:
- * add links to spotify, etc
+ * TODO: add links to spotify, etc
  */
 
 const LIFESAVER = {
