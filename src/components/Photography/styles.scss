@@ -1,27 +1,29 @@
-$gallery-width: 350px;
+@import "stylesheets/utilities/colours.scss";
 
-.Gallery {
-  width: 100%;
+$image-width: 350px;
+
+// TODO: consolidate all these repeated gallery styles
+
+.Photography {
   display: block;
+  width: 1250px;
+  margin: 0 auto;
 
   &__header {
-    h1 {
-      margin: 0;
-    }
-    margin: 0px;
     margin-bottom: 40px;
   }
 
   &__galleries-grid {
     width: 100%;
-    columns: 4 $gallery-width;
-    column-gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($image-width, 1fr));
+    grid-gap: .5rem;
+    align-items: flex-start;
   }
 
   &__gallery-container {
     display: inline-block;
     position: relative;
-    margin-bottom: 1rem;
     cursor: pointer;
   }
 
@@ -40,7 +42,15 @@ $gallery-width: 350px;
     }
   }
 
+  &__gallery-container-overlay-contents {
+    color: $color-white;
+    font-weight: 600;
+    font-size: 18px;
+    margin: auto;
+  }
+
   &__gallery-cover {
     width: 100%;
+    display: block;
   }
 }

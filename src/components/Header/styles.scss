@@ -1,0 +1,39 @@
+@import "stylesheets/utilities/colours.scss";
+@import "stylesheets/utilities/variables.scss";
+
+.Header {
+  width: 1250px;
+  margin: 30px auto;
+
+  &__name {
+    font-size: 48pt;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover, a:active {
+      text-decoration: underline;
+      color: $color-link-hover;
+    }
+  }
+
+  &__icon-container {
+    display: inline-flex;
+    float: right;
+    position: relative;
+    top: 50px;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    color: black;
+
+    &:hover {
+      color: $color-link-hover;
+    }
+  }
+}

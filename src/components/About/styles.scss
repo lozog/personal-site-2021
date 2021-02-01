@@ -1,6 +1,9 @@
 @import "stylesheets/utilities/colours.scss";
 
-.Home {
+.About {
+  width: 1250px;
+  margin: 0 auto;
+
   &__contact {
     margin-top: 40px;
     width: 400px;
@@ -20,7 +23,7 @@
       border: 0;
       border-bottom: 1px solid rgba(255, 255, 255, 0.5);
       font-size: 16px;
-      color: $color-white;
+      color: black;
     }
 
     & textarea {
@@ -30,25 +33,25 @@
 
     & textarea:focus, & input:focus {
       outline: none;
-      border-color: $color-white;
+      border-color: black;
     }
 
     & textarea:hover, & input:hover {
-      border-color: $color-white;
+      border-color: black;
     }
   }
 
   &__contact-button {
-    color: $color-white;
+    color: black;
     width: 100px;
     height: 32px;
     margin-top: 30px;
     background-color: rgba(0, 0, 0, 0);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid black;
     cursor: pointer;
 
     &:hover {
-      border-color: $color-white;
+      border-color: black;
     }
   }
 

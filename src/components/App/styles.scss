@@ -1,0 +1,11 @@
+@import "stylesheets/utilities/colours.scss";
+@import "stylesheets/utilities/variables.scss";
+
+$sidebar-width: 200px;
+$sidebar-right-margin: 20px;
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

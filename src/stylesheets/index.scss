@@ -7,16 +7,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  padding: 0 2em;
+  // padding: 0 2em;
 
   @media (max-width: $small-screen-breakpoint) {
    padding: 0 10px;
   }
 
+  background-color: $color-white;
   // TODO: make switching to dark mode easier
   // uncomment for dark mode
-  background-color: #3d3f3f;
-  color: $color-white;
+  // background-color: #3d3f3f;
+  // color: $color-white;
 }
 
 code {
@@ -33,7 +34,7 @@ a {
   color: $color-link;
 }
 
-a:focus, a:active, a:hover, .sidebar-active_link {
+a:hover, a:active {
   text-decoration: underline;
   color: $color-link-hover;
 }

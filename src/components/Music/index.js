@@ -1,4 +1,4 @@
-import "stylesheets/Music.scss";
+import "./styles.scss";
 
 /**
  * TODO: add links to spotify, etc
@@ -39,18 +39,27 @@ const GIK_WYP = {
   url: "https://tom-swift.bandcamp.com/album/green-is-keen-whats-your-problem"
 };
 
+const TTSA = {
+  title: "Time to Start Again",
+  releaseDate: "2021-01-15",
+  coverUrl: "https://f4.bcbits.com/img/a0642444381_16.jpg",
+  url: "https://tom-swift.bandcamp.com/track/time-to-start-again"
+};
+
 const RELEASES = [
   LIFESAVER,
   WONDER,
   THE_CAMERA,
   SUNDOWNING,
   GIK_WYP,
+  TTSA,
 ];
 
 function Music() {
   return (
     <div className="Music">
-      <h1>Music</h1>
+      <div className="Music__header">
+      </div>
       <div className="Music__releases-grid">
         {
           RELEASES.map((releaseInfo) => (

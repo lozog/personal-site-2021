@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import Lightbox from 'react-image-lightbox';
 
 import { GALLERIES } from "data/galleries";
-import "stylesheets/Gallery.scss";
+import "./styles.scss";
 
 function Gallery() {
   const { galleryId } = useParams();
@@ -22,7 +22,6 @@ function Gallery() {
   return (
     <div className="Gallery">
       <div className="Gallery__header">
-        <h1>{gallery.title}</h1>
         <Link to="/photography">&lt; Back</Link>
       </div>
       <div className="Gallery__galleries-grid">

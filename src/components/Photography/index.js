@@ -1,16 +1,18 @@
 import { Link } from "react-router-dom";
 
 import { GALLERIES } from "data/galleries";
-import "stylesheets/Photography.scss";
+import "./styles.scss";
 
 /**
- * TODO: add link to my Instagram
+ * TODO: compress images into avifs
+ * https://github.com/GoogleChromeLabs/squoosh/tree/dev/cli
  */
 
 function Photography() {
   return (
     <div className="Photography">
-      <h1>Photography</h1>
+      <div className="Photography__header">
+      </div>
       <div className="Photography__galleries-grid">
         {
           Object.entries(GALLERIES).map(([key, galleryInfo], i) => (
