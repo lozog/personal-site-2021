@@ -1,6 +1,7 @@
-import { BrowserRouter as Router, Switch, Route, NavLink, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import 'react-image-lightbox/style.css';
 
+import About from "components/pages/About";
 import Footer from "components/Footer";
 import Header from "components/Header";
 import Gallery from "components/pages/Gallery";
@@ -26,9 +27,14 @@ function HomeTest() {
               </div>
             </div>
           </Link>
-          <div className="HomeTest__image-2">
-            <img src={"/img/000017960026-26.jpg"} alt="me" />
-          </div>
+          <Link to={"/about"}>
+            <div className="HomeTest__image-2">
+              <img src={"/img/000017960026-26.jpg"} alt="me" />
+              <div className="HomeTest__image-overlay">
+                <div className="HomeTest__image-overlay-contents">About</div>
+              </div>
+            </div>
+          </Link>
           <Link to={"/photography"}>
             <div className="HomeTest__image-3">
               <img src="/img/buenos-aires-2020/000008-3.jpg" alt="photography" />
@@ -61,6 +67,9 @@ function App() {
           </Route>
           <Route path="/photography/:galleryId">
             <Gallery />
+          </Route>
+          <Route path="/about">
+            <About />
           </Route>
           <Route component={HomeTest} />
         </Switch>

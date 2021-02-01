@@ -94,6 +94,8 @@ $sidebar-right-margin: 20px;
   }
 
   &__image-2 {
+    position: relative;
+    cursor: pointer;
     background-color: black;
     background-position: center;
     background-size: cover;
