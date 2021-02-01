@@ -64,3 +64,39 @@ $sidebar-right-margin: 20px;
   flex-basis: 0;
   flex-grow: 999;
 }
+
+.HomeTest {
+  &__outer-container {
+    margin: 50px 25%;
+    position: relative;
+  }
+
+  &__inner-container {
+    position: relative;
+  }
+
+  &__image-1 {
+    width: 431px;
+    height: 308px;
+    background-color: red;
+    position: absolute;
+    top: 50px;
+  }
+
+  &__image-2 {
+    width: 370px;
+    height: 240px;
+    background-color: white;
+    position: absolute;
+    top: 381px;
+    left: 62px;
+  }
+
+  &__image-3 {
+    width: 357px;
+    height: 500px;
+    background-color: blue;
+    position: absolute;
+    left: 457px;
+  }
+}
