@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import "./styles.scss";
 
 /**
@@ -61,7 +59,6 @@ function Music() {
   return (
     <div className="Music">
       <div className="Music__header">
-        <Link to="/">&lt; Back</Link>
       </div>
       <div className="Music__releases-grid">
         {

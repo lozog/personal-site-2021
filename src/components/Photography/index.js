@@ -4,14 +4,14 @@ import { GALLERIES } from "data/galleries";
 import "./styles.scss";
 
 /**
- * TODO: add link to my Instagram
+ * TODO: compress images into avifs
+ * https://github.com/GoogleChromeLabs/squoosh/tree/dev/cli
  */
 
 function Photography() {
   return (
     <div className="Photography">
       <div className="Photography__header">
-        <Link to="/">&lt; Back</Link>
       </div>
       <div className="Photography__galleries-grid">
         {
