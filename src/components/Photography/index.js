@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import { GALLERIES } from "data/galleries";
-import "stylesheets/Photography.scss";
+import "./styles.scss";
 
 /**
  * TODO: add link to my Instagram

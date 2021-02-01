@@ -1,7 +1,7 @@
 import { Spotify, Github, Instagram, Bandcamp } from '@icons-pack/react-simple-icons';
 import { Link } from "react-router-dom";
 
-import "stylesheets/Header.scss";
+import "./styles.scss";
 
 function Header() {
   return (

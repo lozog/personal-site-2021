@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import Lightbox from 'react-image-lightbox';
 
 import { GALLERIES } from "data/galleries";
-import "stylesheets/HomeGallery.scss";
+import "./styles.scss";
 
 function HomeGallery() {
   // const { galleryId } = useParams();

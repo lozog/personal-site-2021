@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import 'react-image-lightbox/style.css';
 
-import About from "components/pages/About";
-import Footer from "components/Footer";
-import Header from "components/Header";
-import Gallery from "components/pages/Gallery";
-import HomeGallery from "components/pages/HomeGallery";
-import Music from "components/pages/Music";
-import Photography from "components/pages/Photography";
-import "stylesheets/App.scss";
+import About from "components/About/index.js";
+import Footer from "components/Footer/index.js";
+import Header from "components/Header/index.js";
+import Gallery from "components/Gallery/index.js";
+// import HomeGallery from "components/pages/HomeGallery/index.js";
+import Music from "components/Music/index.js";
+import Photography from "components/Photography/index.js";
+import "./styles.scss";
 
 /**
  * TODO: refactor using StyledComponents

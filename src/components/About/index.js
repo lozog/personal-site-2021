@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import "stylesheets/About.scss";
+import "./styles.scss";
 
 function About() {
   const [formErrorMessage, setFormErrorMessage] = useState("");

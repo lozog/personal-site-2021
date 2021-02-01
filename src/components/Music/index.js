@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import "stylesheets/Music.scss";
+import "./styles.scss";
 
 /**
  * TODO: add links to spotify, etc
