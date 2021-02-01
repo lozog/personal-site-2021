@@ -13,10 +13,11 @@ body {
    padding: 0 10px;
   }
 
+  background-color: $color-white;
   // TODO: make switching to dark mode easier
   // uncomment for dark mode
-  background-color: #3d3f3f;
-  color: $color-white;
+  // background-color: #3d3f3f;
+  // color: $color-white;
 }
 
 code {

@@ -66,37 +66,49 @@ $sidebar-right-margin: 20px;
 }
 
 .HomeTest {
+  &__header {
+    padding: 30px 50px;
+    font-size: 48pt;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
   &__outer-container {
-    margin: 50px 25%;
-    position: relative;
+    margin: 75px auto;
+    width: 100%;
   }
 
   &__inner-container {
-    position: relative;
+    width: 808px;
+    margin: 0 auto;
   }
 
   &__image-1 {
     width: 431px;
     height: 308px;
     background-color: red;
-    position: absolute;
-    top: 50px;
+    margin-top: 40px;
+    float: left;
   }
 
   &__image-2 {
-    width: 370px;
-    height: 240px;
-    background-color: white;
-    position: absolute;
-    top: 381px;
-    left: 62px;
-  }
-
-  &__image-3 {
     width: 357px;
     height: 500px;
     background-color: blue;
-    position: absolute;
-    left: 457px;
+    float: left;
+    margin-left: 20px;
+  }
+
+  &__image-3 {
+    width: 370px;
+    height: 240px;
+    background-color: green;
+    float: left;
+    transform: translateY(-131px);
+    margin-left: 61px;
+  }
+
+  &__clear {
+    clear: both;
   }
 }

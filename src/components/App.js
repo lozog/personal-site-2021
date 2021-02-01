@@ -18,12 +18,13 @@ import "stylesheets/App.scss";
 function HomeTest() {
   return (
     <div className="HomeTest">
-      <div>Liam Ozog</div>
+      <div className="HomeTest__header">Liam Ozog</div>
       <div className="HomeTest__outer-container">
         <div className="HomeTest__inner-container">
           <div className="HomeTest__image-1"></div>
           <div className="HomeTest__image-2"></div>
           <div className="HomeTest__image-3"></div>
+          <div className="HomeTest__clear"></div>
         </div>
       </div>
 
