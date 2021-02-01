@@ -47,8 +47,8 @@ function HomeTest() {
 function App() {
   return (
     <div className="App">
-      <Header />
       <Router>
+        <Header />
         <Switch>
           <Route path="/" exact={true}>
             <HomeTest />
@@ -64,8 +64,8 @@ function App() {
           </Route>
           <Route component={HomeTest} />
         </Switch>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 }

@@ -9,6 +9,16 @@
     font-size: 48pt;
     font-weight: 600;
     text-transform: uppercase;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover, a:active {
+      text-decoration: underline;
+      color: $color-link-hover;
+    }
   }
 
   &__icon-container {

@@ -1,11 +1,14 @@
 import { Spotify, Github, Instagram, Bandcamp } from '@icons-pack/react-simple-icons';
+import { Link } from "react-router-dom";
 
 import "stylesheets/Header.scss";
 
 function Header() {
   return (
     <div className="Header">
-      <span className="Header__name">Liam Ozog</span>
+      <span className="Header__name">
+        <Link to="/">Liam Ozog</Link>
+      </span>
       <div className="Header__icon-container">
         <a href="https://github.com/lozog" target="_blank" rel="noopener noreferrer">
           <Github size={24} className="Header__icon" />
