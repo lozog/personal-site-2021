@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, NavLink, Link } from "react-router-dom";
 import { Spotify, Github, Instagram, Bandcamp } from '@icons-pack/react-simple-icons';
 import 'react-image-lightbox/style.css';
 
@@ -37,9 +37,25 @@ function HomeTest() {
       </div>
       <div className="HomeTest__outer-container">
         <div className="HomeTest__inner-container">
-          <div className="HomeTest__image-1"></div>
-          <div className="HomeTest__image-2"></div>
-          <div className="HomeTest__image-3"></div>
+          <Link to={"/music"}>
+            <div className="HomeTest__image-1">
+              <img src="https://f4.bcbits.com/img/a0642444381_16.jpg" alt="music" />
+              <div className="HomeTest__image-overlay">
+                <div className="HomeTest__image-overlay-contents">Music</div>
+              </div>
+            </div>
+          </Link>
+          <div className="HomeTest__image-2">
+            <img src={"/img/000017960026-26.jpg"} alt="me" />
+          </div>
+          <Link to={"/photography"}>
+            <div className="HomeTest__image-3">
+              <img src="/img/buenos-aires-2020/000008-3.jpg" alt="photography" />
+              <div className="HomeTest__image-overlay">
+                <div className="HomeTest__image-overlay-contents">Photography</div>
+              </div>
+            </div>
+          </Link>
           <div className="HomeTest__clear"></div>
         </div>
       </div>

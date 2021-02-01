@@ -39,12 +39,20 @@ const GIK_WYP = {
   url: "https://tom-swift.bandcamp.com/album/green-is-keen-whats-your-problem"
 };
 
+const TTSA = {
+  title: "Time to Start Again",
+  releaseDate: "2021-01-15",
+  coverUrl: "https://f4.bcbits.com/img/a0642444381_16.jpg",
+  url: "https://tom-swift.bandcamp.com/track/time-to-start-again"
+};
+
 const RELEASES = [
   LIFESAVER,
   WONDER,
   THE_CAMERA,
   SUNDOWNING,
   GIK_WYP,
+  TTSA,
 ];
 
 function Music() {
