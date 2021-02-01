@@ -17,7 +17,10 @@ export default function Home() {
           </Link>
           <Link to={"/about"}>
             <div className="Home__image-2">
-              <img src={"/img/000017960026-26.jpg"} alt="me" />
+              <picture>
+                <source type="image/avif" srcset={"/img/000017960026-26.avif"} />
+                <img src={"/img/000017960026-26.jpg"} alt="me" />
+              </picture>
               <div className="Home__image-overlay">
                 <div className="Home__image-overlay-contents">About</div>
               </div>
