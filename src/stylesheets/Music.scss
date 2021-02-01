@@ -5,11 +5,11 @@ $release-width: 350px;
 $release-width-small: 200px;
 
 .Music {
-  width: 100%;
+  width: 1250px;
   display: block;
+  margin: 0 auto;
 
-  h1 {
-    margin: 0px;
+  &__header {
     margin-bottom: 40px;
   }
 

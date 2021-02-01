@@ -24,36 +24,6 @@ $sidebar-right-margin: 20px;
       display: block;
     }
   }
-
-  &__sidebar-icon-container {
-    display: inline-flex;
-    float: right;
-    position: relative;
-    top: 50px;
-  }
-
-  &__sidebar-icon {
-    margin-right: 10px;
-    color: black;
-
-    // uncomment for dark mode
-    // color: $color-white;
-
-    &:hover {
-      color: $color-link-hover;
-    }
-  }
-}
-
-.App-header {
-  background-color: $color-white;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
 }
 
 .App-link {
@@ -71,18 +41,8 @@ $sidebar-right-margin: 20px;
 }
 
 .HomeTest {
-  &__header {
-    padding: 30px 50px;
-  }
-
-  &__header-name {
-    font-size: 48pt;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-
   &__outer-container {
-    margin: 75px auto;
+    margin: 75px auto 0;
     width: 100%;
   }
 
@@ -128,6 +88,8 @@ $sidebar-right-margin: 20px;
       width: 431px;
       height: 308px;
       display: block;
+      object-fit: cover;
+      object-position: center;
     }
   }
 

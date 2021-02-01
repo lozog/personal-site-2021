@@ -1,8 +1,9 @@
 $gallery-width: 350px;
 
 .Gallery {
-  width: 100%;
   display: block;
+  width: 1250px;
+  margin: 0 auto;
 
   &__header {
     h1 {

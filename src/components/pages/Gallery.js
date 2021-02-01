@@ -22,7 +22,6 @@ function Gallery() {
   return (
     <div className="Gallery">
       <div className="Gallery__header">
-        <h1>{gallery.title}</h1>
         <Link to="/photography">&lt; Back</Link>
       </div>
       <div className="Gallery__galleries-grid">

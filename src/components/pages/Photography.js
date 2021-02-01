@@ -10,7 +10,9 @@ import "stylesheets/Photography.scss";
 function Photography() {
   return (
     <div className="Photography">
-      <h1>Photography</h1>
+      <div className="Photography__header">
+        <Link to="/">&lt; Back</Link>
+      </div>
       <div className="Photography__galleries-grid">
         {
           Object.entries(GALLERIES).map(([key, galleryInfo], i) => (

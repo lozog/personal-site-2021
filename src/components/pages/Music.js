@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "stylesheets/Music.scss";
 
 /**
@@ -58,7 +60,9 @@ const RELEASES = [
 function Music() {
   return (
     <div className="Music">
-      <h1>Music</h1>
+      <div className="Music__header">
+        <Link to="/">&lt; Back</Link>
+      </div>
       <div className="Music__releases-grid">
         {
           RELEASES.map((releaseInfo) => (

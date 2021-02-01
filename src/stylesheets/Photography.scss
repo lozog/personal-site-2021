@@ -5,11 +5,11 @@ $image-width: 350px;
 // TODO: consolidate all these repeated gallery styles
 
 .Photography {
-  width: 100%;
   display: block;
+  width: 1250px;
+  margin: 0 auto;
 
-  h1 {
-    margin: 0px;
+  &__header {
     margin-bottom: 40px;
   }
 

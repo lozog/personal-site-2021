@@ -1,10 +1,29 @@
-.Header {
-  margin: 30px 0;
-  border-top: 2px solid #bbb;
+@import "stylesheets/utilities/colours.scss";
+@import "stylesheets/utilities/variables.scss";
 
-  & > h1 {
-    font-size: 60px;
-    font-weight: 700;
-    margin: 10px 0;
+.Header {
+  width: 1250px;
+  margin: 30px auto;
+
+  &__name {
+    font-size: 48pt;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__icon-container {
+    display: inline-flex;
+    float: right;
+    position: relative;
+    top: 50px;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    color: black;
+
+    &:hover {
+      color: $color-link-hover;
+    }
   }
 }
