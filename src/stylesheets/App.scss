@@ -26,13 +26,18 @@ $sidebar-right-margin: 20px;
   }
 
   &__sidebar-icon-container {
-    display: flex;
-    margin-top: 20px;
+    display: inline-flex;
+    float: right;
+    position: relative;
+    top: 50px;
   }
 
   &__sidebar-icon {
     margin-right: 10px;
-    color: $color-white;
+    color: black;
+
+    // uncomment for dark mode
+    // color: $color-white;
 
     &:hover {
       color: $color-link-hover;
@@ -68,6 +73,10 @@ $sidebar-right-margin: 20px;
 .HomeTest {
   &__header {
     padding: 30px 50px;
+
+  }
+
+  &__header-name {
     font-size: 48pt;
     font-weight: 600;
     text-transform: uppercase;

@@ -18,7 +18,23 @@ import "stylesheets/App.scss";
 function HomeTest() {
   return (
     <div className="HomeTest">
-      <div className="HomeTest__header">Liam Ozog</div>
+      <div className="HomeTest__header">
+        <span className="HomeTest__header-name">Liam Ozog</span>
+        <div className="App__sidebar-icon-container">
+          <a href="https://github.com/lozog" target="_blank" rel="noopener noreferrer">
+            <Github size={24} className="App__sidebar-icon" />
+          </a>
+          <a href="https://open.spotify.com/artist/4Ap3RmZW14MSTCjR8X6aru?si=wLfh_FeeTIiduzR95aGVrQ" target="_blank" rel="noopener noreferrer">
+            <Spotify size={24} className="App__sidebar-icon" />
+          </a>
+          <a href="https://www.instagram.com/l__ozog/" target="_blank" rel="noopener noreferrer">
+            <Instagram size={24} className="App__sidebar-icon" />
+          </a>
+          <a href="https://tom-swift.bandcamp.com/" target="_blank" rel="noopener noreferrer">
+            <Bandcamp size={24} className="App__sidebar-icon" />
+          </a>
+        </div>
+      </div>
       <div className="HomeTest__outer-container">
         <div className="HomeTest__inner-container">
           <div className="HomeTest__image-1"></div>
