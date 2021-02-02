@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import Lightbox from 'react-image-lightbox';
 
+import Overlay from "components/Overlay";
 import { GALLERIES } from "data/galleries";
 import "./styles.scss";
 
@@ -28,15 +29,15 @@ export default function Gallery() {
         {
           gallery.images.map((image, i) => (
             <div
-              className="Gallery__gallery-container"
               key={image.filename}
               onClick={() => {
                 setImageIndex(i)
                 setIsOpen(true)
               }}
             >
-              <img src={`/img/${galleryId}/${image.filename}`} alt={image.filename} className="Gallery__gallery-cover" />
-              <div className="Gallery__gallery-container-overlay" />
+              <Overlay>
+                <img src={`/img/${galleryId}/${image.filename}`} alt={image.filename} className="Gallery__gallery-cover" />
+              </Overlay>
             </div>
           ))
         }

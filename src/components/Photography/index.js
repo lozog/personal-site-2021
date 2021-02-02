@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+import Overlay from "components/Overlay";
 import { GALLERIES } from "data/galleries";
 import "./styles.scss";
 
@@ -16,13 +17,10 @@ function Photography() {
       <div className="Photography__galleries-grid">
         {
           Object.entries(GALLERIES).map(([key, galleryInfo], i) => (
-            <Link to={`/photography/${key}`}>
-              <div className="Photography__gallery-container" key={galleryInfo.title}>
+            <Link to={`/photography/${key}`} key={key}>
+              <Overlay text={galleryInfo.title}>
                 <img src={`/img/${key}/${galleryInfo.coverFilename}`} alt={galleryInfo.title} className="Photography__gallery-image" />
-                <div className="Photography__gallery-container-overlay">
-                  <div className="Photography__gallery-container-overlay-contents">{galleryInfo.title}</div>
-                </div>
-              </div>
+              </Overlay>
             </Link>
           ))
         }

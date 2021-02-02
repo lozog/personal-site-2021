@@ -1,3 +1,5 @@
+import Overlay from "components/Overlay";
+
 import "./styles.scss";
 
 const LIFESAVER = {
@@ -60,12 +62,10 @@ function Music() {
         {
           RELEASES.map((releaseInfo) => (
             <a href={releaseInfo.url} target="_blank" rel="noopener noreferrer" key={releaseInfo.title}>
-              <div className="Music__release-container">
+              <Overlay>
                 <img src={releaseInfo.coverUrl} alt={releaseInfo.title} className="Music__cover-art" />
-                <div className="Music__release-container-overlay">
-                </div>
-              </div>
-              <div className="Music__release-container-title">{releaseInfo.title}</div>
+              </Overlay>
+              <div className="Music__release-title">{releaseInfo.title}</div>
             </a>
           ))
         }
