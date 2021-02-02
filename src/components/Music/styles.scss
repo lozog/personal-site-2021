@@ -1,9 +1,6 @@
 @import "stylesheets/utilities/colours.scss";
 @import "stylesheets/utilities/variables.scss";
 
-$release-width: 350px;
-$release-width-small: 200px;
-
 .Music {
   &__header {
     margin-bottom: 40px;
@@ -12,16 +9,12 @@ $release-width-small: 200px;
   &__releases-grid {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, $release-width);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    align-items: flex-start;
 
     @media (max-width: $small-screen-width) {
-      grid-template-columns: repeat(auto-fill, $release-width-small);
-    }
-
-    @media (max-width: $xsmall-screen-width) {
-      grid-template-columns: auto;
+      grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
     }
   }
 
