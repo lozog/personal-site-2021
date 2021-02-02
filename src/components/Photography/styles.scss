@@ -1,4 +1,5 @@
 @import "stylesheets/utilities/colours.scss";
+@import "stylesheets/utilities/variables.scss";
 
 .Photography {
   &__header {
@@ -8,11 +9,11 @@
   &__galleries-grid {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-gap: .5rem;
+    grid-template-columns: repeat(auto-fill, minmax(323px, 1fr));
+    grid-gap: 20px;
     align-items: flex-start;
 
-    @media (max-width: $xsmall-screen-width) {
+    @media (max-width: $small-screen-width) {
       grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
     }
   }
