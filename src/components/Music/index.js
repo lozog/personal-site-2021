@@ -51,7 +51,7 @@ const RELEASES = [
   SUNDOWNING,
   GIK_WYP,
   TTSA,
-];
+].reverse();
 
 function Music() {
   return (
