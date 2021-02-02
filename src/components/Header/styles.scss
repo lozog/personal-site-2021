@@ -48,6 +48,12 @@
       float: none;
       display: block;
       top: auto;
+      margin-top: 5px;
+
+      svg {
+        width: 48;
+        height: 48;
+      }
     }
   }
 }
