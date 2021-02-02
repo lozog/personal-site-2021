@@ -3,7 +3,7 @@
 .About {
   &__contact {
     margin-top: 40px;
-    width: 400px;
+    max-width: 400px;
 
     h3 {
       margin: 0;
@@ -14,7 +14,7 @@
       margin-top: 10px;
 
     & input, & textarea {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: black;
       width: 100%;
       height: 32px;
       border: 1px solid grey;
@@ -34,7 +34,7 @@
     width: 100px;
     height: 32px;
     margin-top: 30px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: black;
     border: 1px solid black;
     cursor: pointer;
 
