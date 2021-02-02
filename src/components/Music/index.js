@@ -1,9 +1,5 @@
 import "./styles.scss";
 
-/**
- * TODO: add links to spotify, etc
- */
-
 const LIFESAVER = {
   title: "Lifesaver",
   releaseDate: "2019-06-01",

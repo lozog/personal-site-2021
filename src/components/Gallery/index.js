@@ -5,7 +5,7 @@ import Lightbox from 'react-image-lightbox';
 import { GALLERIES } from "data/galleries";
 import "./styles.scss";
 
-function Gallery() {
+export default function Gallery() {
   const { galleryId } = useParams();
   const [imageIndex, setImageIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
@@ -60,5 +60,3 @@ function Gallery() {
     </div>
   );
 }
-
-export default Gallery;

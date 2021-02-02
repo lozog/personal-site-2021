@@ -1,11 +1,9 @@
 import "./styles.scss";
 
-function Footer() {
+export default function Footer() {
   return (
     <div className="Footer">
       &#169;2021 Liam Ozog
     </div>
   );
 }
-
-export default Footer;

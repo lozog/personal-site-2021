@@ -1,13 +1,13 @@
 @import "stylesheets/utilities/colours.scss";
 @import "stylesheets/utilities/variables.scss";
 
+$main-font: 'Montserrat', sans-serif;
+
 body {
   margin: 0;
   font-family: $main-font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  // padding: 0 2em;
 
   @media (max-width: $small-screen-breakpoint) {
    padding: 0 10px;
@@ -21,8 +21,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 textarea, button {
