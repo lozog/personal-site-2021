@@ -29,6 +29,7 @@ export default function Gallery() {
         {
           gallery.images.map((image, i) => (
             <div
+            className="Gallery__image-container"
               key={image.filename}
               onClick={() => {
                 setImageIndex(i)
@@ -36,7 +37,7 @@ export default function Gallery() {
               }}
             >
               <Overlay>
-                <img src={`/img/${galleryId}/${image.filename}`} alt={image.filename} className="Gallery__gallery-cover" />
+                <img src={`/img/${galleryId}/${image.filename}`} alt={image.filename} className="Gallery__image" />
               </Overlay>
             </div>
           ))
