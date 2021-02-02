@@ -2,8 +2,7 @@
 @import "stylesheets/utilities/variables.scss";
 
 .Header {
-  width: 1250px;
-  margin: 30px auto;
+  margin: 30px 0;
 
   &__name {
     font-size: 48pt;
@@ -26,10 +25,17 @@
     float: right;
     position: relative;
     top: 50px;
+
+    a {
+    margin-right: 10px;
+    }
+
+    a:last-child {
+      margin-right: 0;
+    }
   }
 
   &__icon {
-    margin-right: 10px;
     color: black;
 
     &:hover {
