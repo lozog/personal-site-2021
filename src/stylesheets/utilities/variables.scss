@@ -1,2 +1,5 @@
-$small-screen-breakpoint: 800px;
-$xsmall-screen-breakpoint: 470px;
+$home-centerpiece-width: 808px;
+$app-margin: 30px;
+
+$small-screen-width: $home-centerpiece-width + (2 * $app-margin) - 1;
+$xsmall-screen-width: 610px;

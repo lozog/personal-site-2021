@@ -3,15 +3,15 @@
 
 $main-font: 'Montserrat', sans-serif;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: $main-font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: $small-screen-breakpoint) {
-   padding: 0 10px;
-  }
 
   background-color: $color-white;
   // TODO: make switching to dark mode easier

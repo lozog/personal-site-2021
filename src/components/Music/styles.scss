@@ -16,11 +16,11 @@ $release-width-small: 200px;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 
-    @media (max-width: $small-screen-breakpoint) {
+    @media (max-width: $small-screen-width) {
       grid-template-columns: repeat(auto-fill, $release-width-small);
     }
 
-    @media (max-width: $xsmall-screen-breakpoint) {
+    @media (max-width: $xsmall-screen-width) {
       grid-template-columns: auto;
     }
   }

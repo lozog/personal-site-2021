@@ -2,13 +2,13 @@
 @import "stylesheets/utilities/variables.scss";
 
 .Home {
-  &__outer-container {
+  &__container {
     margin: 75px auto 0;
     width: 100%;
   }
 
-  &__inner-container {
-    width: 808px;
+  &__centerpiece {
+    width: $home-centerpiece-width;
     margin: 0 auto;
   }
 
@@ -27,7 +27,7 @@
     }
   }
 
-  &__image-overlay-contents {
+  &__image-overlay-text {
     color: $color-white;
     font-weight: 600;
     font-size: 24pt;
@@ -36,58 +36,93 @@
     letter-spacing: 2px;
   }
 
-  &__image-1 {
-    position: relative;
-    cursor: pointer;
-    background-color: black;
-    background-position: center;
-    background-size: cover;
-    margin-top: 40px;
-    float: left;
-
-    img {
-      width: 431px;
-      height: 308px;
-      display: block;
-      object-fit: cover;
-      object-position: center;
-    }
-  }
-
-  &__image-2 {
+  &__image {
     position: relative;
     cursor: pointer;
     background-color: black;
     background-position: center;
     background-size: cover;
     float: left;
-    margin-left: 20px;
+
+    /*
+                  +-----------+
+                  |           |
+                  |           |
+    +----------+  |           |
+    |          |  |           |
+    |          |  |           |
+    |     1    |  |           |
+    |          |  |     2     |
+    |          |  |           |
+    +----------+  |           |
+       +-------+  |           |
+       |       |  |           |
+       |   3   |  +-----------+
+       |       |
+       |       |
+       +-------+
+    */
 
     img {
-      width: 357px;
-      height: 500px;
       display: block;
     }
-  }
 
-  &__image-3 {
-    position: relative;
-    cursor: pointer;
-    background-color: black;
-    background-position: center;
-    background-size: cover;
-    float: left;
-    transform: translateY(-131px);
-    margin-left: 61px;
+    &--1 {
+      margin-top: 40px;
 
-    img {
-      width: 370px;
-      height: 240px;
-      display: block;
+      img {
+        width: 431px;
+        height: 308px;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    &--2 {
+      margin-left: 20px;
+
+      img {
+        width: 357px;
+        height: 500px;
+      }
+    }
+
+    &--3 {
+      transform: translateY(-131px);
+      margin-left: 61px;
+
+      img {
+        width: 370px;
+        height: 240px;
+      }
     }
   }
 
   &__clear {
     clear: both;
+  }
+
+  @media (max-width: $small-screen-width) {
+    &__container {
+      margin-top: 0;
+    }
+
+    &__centerpiece {
+      width: 100%;
+    }
+
+    &__image {
+      float: none;
+      transform: none;
+
+      &--1, &--2, &--3 {
+        margin: 0 0 30px;
+
+        img {
+          width:100%;
+          height: auto;
+        }
+      }
+    }
   }
 }

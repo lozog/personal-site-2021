@@ -2,9 +2,16 @@
 @import "stylesheets/utilities/variables.scss";
 
 .App {
-  width: 1250px; // TODO: make page responsive
+  max-width: 1250px;
+  min-width: $home-centerpiece-width;
   margin: 0 auto;
+  padding: 0 $app-margin;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
+  @media (max-width: $small-screen-width) {
+    width: 100%;
+    min-width: auto;
+  }
 }
