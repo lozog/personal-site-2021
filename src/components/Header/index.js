@@ -13,7 +13,7 @@ function Header() {
         <a href="https://github.com/lozog" target="_blank" rel="noopener noreferrer">
           <Github size={24} className="Header__icon" />
         </a>
-        <a href="https://open.spotify.com/artist/4Ap3RmZW14MSTCjR8X6aru?si=wLfh_FeeTIiduzR95aGVrQ" target="_blank" rel="noopener noreferrer">
+        <a href="https://open.spotify.com/artist/6CPrLNVq7V7bQSltQq7qVv?si=S2g7rPSxScuYDeqAyHKWJw" target="_blank" rel="noopener noreferrer">
           <Spotify size={24} className="Header__icon" />
         </a>
         <a href="https://www.instagram.com/l__ozog/" target="_blank" rel="noopener noreferrer">
