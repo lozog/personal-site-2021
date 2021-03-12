@@ -19,7 +19,7 @@ function Header() {
         <a href="https://www.instagram.com/l__ozog/" target="_blank" rel="noopener noreferrer">
           <Instagram size={24} className="Header__icon" />
         </a>
-        <a href="https://tom-swift.bandcamp.com/" target="_blank" rel="noopener noreferrer">
+        <a href="https://liamozog.bandcamp.com/" target="_blank" rel="noopener noreferrer">
           <Bandcamp size={24} className="Header__icon" />
         </a>
       </div>
