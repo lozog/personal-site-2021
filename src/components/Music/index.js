@@ -44,6 +44,13 @@ const TTSA = {
   url: "https://liamozog.bandcamp.com/track/time-to-start-again"
 };
 
+const TTS = {
+  title: "Through the Storm",
+  releaseDate: "2021-04-23",
+  coverUrl: "https://f4.bcbits.com/img/a1544255583_16.jpg",
+  url: "https://liamozog.bandcamp.com/track/through-the-storm"
+};
+
 const RELEASES = [
   LIFESAVER,
   WONDER,
@@ -51,6 +58,7 @@ const RELEASES = [
   SUNDOWNING,
   GIK_WYP,
   TTSA,
+  TTS,
 ].reverse();
 
 function Music() {
