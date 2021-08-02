@@ -28,7 +28,7 @@ export default function Home() {
           </Link>
           <Link to={"/photography"}>
             <div className="Home__image Home__image--3">
-              <img src="/img/buenos-aires-2020/000039-68.jpg" alt="photography" />
+              <img src="https://www.dropbox.com/s/bi64dp3p48tblal/000039-68.jpg?raw=1" alt="photography" />
               <div className="Home__image-overlay">
                 <div className="Home__image-overlay-text">Photography</div>
               </div>
