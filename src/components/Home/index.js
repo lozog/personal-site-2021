@@ -18,8 +18,8 @@ export default function Home() {
           <Link to={"/about"}>
             <div className="Home__image Home__image--2">
               <picture>
-                <source type="image/avif" srcSet={"/img/000017960026-26.avif"} />
-                <img src={"/img/000017960026-26.jpg"} alt="me" />
+                <source type="image/avif" srcSet={"https://www.dropbox.com/s/sg5mf9rnrjaiw9y/000017960026-26.avif?raw=1"} />
+                <img src={"https://www.dropbox.com/s/hrqqsqh19sj615w/000017960026-26.jpg?raw=1"} alt="me" />
               </picture>
               <div className="Home__image-overlay">
                 <div className="Home__image-overlay-text">About</div>
