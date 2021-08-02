@@ -51,6 +51,13 @@ const TTS = {
   url: "https://liamozog.bandcamp.com/track/through-the-storm"
 };
 
+const AH = {
+  title: "Already Home",
+  releaseDate: "2021-07-16",
+  coverUrl: "https://f4.bcbits.com/img/a2678739858_10.jpg",
+  url: "https://liamozog.bandcamp.com/track/already-home"
+};
+
 const RELEASES = [
   LIFESAVER,
   WONDER,
@@ -59,6 +66,7 @@ const RELEASES = [
   GIK_WYP,
   TTSA,
   TTS,
+  AH,
 ].reverse();
 
 function Music() {
