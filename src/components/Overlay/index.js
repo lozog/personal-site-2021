@@ -1,6 +1,6 @@
 import "./styles.scss";
 
-export default function Overlay({
+export function Overlay({
   text,
   children
 }) {

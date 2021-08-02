@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Lightbox from 'react-image-lightbox';
 
-import Overlay from "components/Overlay";
+import { Overlay } from "components/Overlay";
 import "./styles.scss";
 
 const gallery = {
@@ -11,7 +11,7 @@ const gallery = {
   images: [{ "filename": "000038-67.jpg" }, { "filename": "000012-7.jpg" }, { "filename": "000010-5.jpg" }, { "filename": "000016-11.jpg" }, { "filename": "000040-69.jpg" }, { "filename": "000036-65.jpg" }, { "filename": "000034-63.jpg" }, { "filename": "000011-6.jpg" }, { "filename": "000008-3.jpg" }, { "filename": "000039-68.jpg" }, { "filename": "000019-14.jpg" }, { "filename": "000035-64.jpg" }, { "filename": "000009-38.jpg" }, { "filename": "000013-8.jpg" }, { "filename": "000007-2.jpg" }, { "filename": "000042-71.jpg" }, { "filename": "000033-62.jpg" }]
 };
 
-export default function Photography() {
+export function Photography() {
   const [imageIndex, setImageIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
 

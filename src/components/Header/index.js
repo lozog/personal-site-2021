@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./styles.scss";
 
-function Header() {
+export function Header() {
   return (
     <div className="Header">
       <span className="Header__name">
@@ -26,5 +26,3 @@ function Header() {
     </div>
   );
 }
-
-export default Header;

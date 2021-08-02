@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import 'react-image-lightbox/style.css';
 
-import About from "components/About/index.js";
-import Footer from "components/Footer/index.js";
-import Header from "components/Header/index.js";
-import Home from "components/Home/index.js";
-import Music from "components/Music/index.js";
-import Photography from "components/Photography/index.js";
+import { About } from "components/About/index.js";
+import { Footer } from "components/Footer/index.js";
+import { Header } from "components/Header/index.js";
+import { Home } from "components/Home/index.js";
+import { Music } from "components/Music/index.js";
+import { Photography } from "components/Photography/index.js";
 import "./styles.scss";
 
 /**

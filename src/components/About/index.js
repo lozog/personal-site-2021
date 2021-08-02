@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./styles.scss";
 
-function About() {
+export function About() {
   const [formErrorMessage, setFormErrorMessage] = useState("");
   const inputNameRef = React.createRef();
   const inputEmailRef = React.createRef();
@@ -67,5 +67,3 @@ function About() {
     </div>
   );
 }
-
-export default About;

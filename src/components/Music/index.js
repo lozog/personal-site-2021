@@ -1,4 +1,4 @@
-import Overlay from "components/Overlay";
+import { Overlay } from "components/Overlay";
 
 import "./styles.scss";
 
@@ -69,7 +69,7 @@ const RELEASES = [
   AH,
 ].reverse();
 
-function Music() {
+export function Music() {
   return (
     <div className="Music">
       <div className="Music__header">
@@ -89,5 +89,3 @@ function Music() {
     </div>
   );
 }
-
-export default Music;

@@ -1,8 +1,8 @@
-import {Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./styles.scss";
 
-export default function Home() {
+export function Home() {
   return (
     <div className="Home">
       <div className="Home__container">
