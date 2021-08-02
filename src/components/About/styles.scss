@@ -1,50 +1,9 @@
-@import "stylesheets/utilities/colours.scss";
-
 .About {
-  &__contact {
-    margin-top: 40px;
-    max-width: 400px;
+  &__photo {
+    margin-top: 20px;
 
-    h3 {
-      margin: 0;
+    img {
+      width: 60%;
     }
-  }
-
-  &__contact-input {
-      margin-top: 10px;
-
-    & input, & textarea {
-      background-color: $color-white;
-      width: 100%;
-      height: 32px;
-      border: 1px solid grey;
-      border-radius: 3px;
-      font-size: 16px;
-      color: black;
-    }
-
-    & textarea {
-      min-height: 100px;
-      margin-top: 5px;
-    }
-  }
-
-  &__contact-button {
-    color: black;
-    width: 100px;
-    height: 32px;
-    margin-top: 30px;
-    background-color: $color-white;
-    border: 1px solid grey;
-    cursor: pointer;
-
-    &:hover {
-      border-color: black;
-    }
-  }
-
-  &__contact-error {
-    margin-top: 10px;
-    color: red;
   }
 }
