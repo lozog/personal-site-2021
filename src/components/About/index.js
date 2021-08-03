@@ -12,8 +12,7 @@ export function About() {
       </div>
       <div className="About__photo">
         <picture>
-          <source type="image/avif" srcSet={"https://www.dropbox.com/s/sg5mf9rnrjaiw9y/000017960026-26.avif?raw=1"} />
-          <img src={"https://www.dropbox.com/s/hrqqsqh19sj615w/000017960026-26.jpg?raw=1"} alt="me" />
+          <img src={"https://storage.googleapis.com/liamozog.com/000017960026-26.jpg"} alt="me" />
         </picture>
       </div>
     </div>

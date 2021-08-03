@@ -18,8 +18,7 @@ export function Home() {
           <Link to={"/about"}>
             <div className="Home__image Home__image--2">
               <picture>
-                <source type="image/avif" srcSet={"https://www.dropbox.com/s/sg5mf9rnrjaiw9y/000017960026-26.avif?raw=1"} />
-                <img src={"https://www.dropbox.com/s/hrqqsqh19sj615w/000017960026-26.jpg?raw=1"} alt="me" />
+                <img src={"https://res.cloudinary.com/dtxbzcy7f/image/upload/v1627956234/personal-site/000017960026-26_bbaaro.jpg"} alt="me" />
               </picture>
               <div className="Home__image-overlay">
                 <div className="Home__image-overlay-text">About</div>
@@ -28,7 +27,7 @@ export function Home() {
           </Link>
           <Link to={"/photography"}>
             <div className="Home__image Home__image--3">
-              <img src="https://www.dropbox.com/s/bi64dp3p48tblal/000039-68.jpg?raw=1" alt="photography" />
+              <img src="https://res.cloudinary.com/dtxbzcy7f/image/upload/v1627956431/personal-site/000039-68_pn2jdm.jpg" alt="photography" />
               <div className="Home__image-overlay">
                 <div className="Home__image-overlay-text">Photography</div>
               </div>
