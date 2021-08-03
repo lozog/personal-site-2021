@@ -1,5 +1,6 @@
 import { Spotify, Github, Instagram, Bandcamp } from '@icons-pack/react-simple-icons';
 import { Link } from "react-router-dom";
+import { ReactComponent as EmailIcon } from "./email.svg";
 
 import "./styles.scss";
 
@@ -10,6 +11,9 @@ export function Header() {
         <Link to="/">Liam Ozog</Link>
       </span>
       <div className="Header__icon-container">
+        <a href="mailto:me@liamozog.com" target="_blank" rel="noopener noreferrer">
+          <EmailIcon className="Header__icon" fill="currentColor" title="email"/>
+        </a>
         <a href="https://github.com/lozog" target="_blank" rel="noopener noreferrer">
           <Github size={24} className="Header__icon" />
         </a>
