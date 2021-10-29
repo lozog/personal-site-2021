@@ -58,6 +58,13 @@ const AH = {
   url: "https://liamozog.bandcamp.com/track/already-home"
 };
 
+const SD = {
+  title: "Stone Days",
+  releaseDate: "2021-10-29",
+  coverUrl: "https://f4.bcbits.com/img/a2463116461_10.jpg",
+  url: "https://liamozog.bandcamp.com/track/stone-days"
+};
+
 const RELEASES = [
   LIFESAVER,
   WONDER,
@@ -67,6 +74,7 @@ const RELEASES = [
   TTSA,
   TTS,
   AH,
+  SD,
 ].reverse();
 
 export function Music() {
