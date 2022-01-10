@@ -12,7 +12,7 @@ export function About() {
       </div>
       <div className="About__photo">
         <picture>
-          <img src={"https://storage.googleapis.com/liamozog.com/000017960026-26.jpg"} alt="me" />
+          <img src={"https://res.cloudinary.com/dtxbzcy7f/image/upload/v1627956234/personal-site/000017960026-26_bbaaro.jpg"} alt="me" />
         </picture>
       </div>
     </div>
