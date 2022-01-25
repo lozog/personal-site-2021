@@ -1,10 +1,4 @@
 [[redirects]]
-  from = "/wordle"
-  to = "https://wordle-web.netlify.app"
-  status = 200
-  force = true
-
-[[redirects]]
   from = "/*"
   to = "/"
-  status = 200'
+  status = 200
